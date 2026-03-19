@@ -1,6 +1,6 @@
 """
-日志配置模块
-提供统一的日志管理，同时输出到控制台和文件
+Modulo di configurazione log
+Fornisce gestione log unificata, con output simultaneo su console e file
 """
 
 import os
@@ -12,58 +12,58 @@ from logging.handlers import RotatingFileHandler
 
 def _ensure_utf8_stdout():
     """
-    确保 stdout/stderr 使用 UTF-8 编码
-    解决 Windows 控制台中文乱码问题
+    Assicura che stdout/stderr utilizzino la codifica UTF-8
+    Risolve il problema dei caratteri non-ASCII nella console Windows
     """
     if sys.platform == 'win32':
-        # Windows 下重新配置标准输出为 UTF-8
+        # Su Windows riconfigura l'output standard in UTF-8
         if hasattr(sys.stdout, 'reconfigure'):
             sys.stdout.reconfigure(encoding='utf-8', errors='replace')
         if hasattr(sys.stderr, 'reconfigure'):
             sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
 
-# 日志目录
+# Directory dei log
 LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'logs')
 
 
 def setup_logger(name: str = 'mirofish', level: int = logging.DEBUG) -> logging.Logger:
     """
-    设置日志器
-    
+    Configura il logger
+
     Args:
-        name: 日志器名称
-        level: 日志级别
-        
+        name: Nome del logger
+        level: Livello di log
+
     Returns:
-        配置好的日志器
+        Logger configurato
     """
-    # 确保日志目录存在
+    # Assicura che la directory dei log esista
     os.makedirs(LOG_DIR, exist_ok=True)
-    
-    # 创建日志器
+
+    # Crea il logger
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    
-    # 阻止日志向上传播到根 logger，避免重复输出
+
+    # Impedisci la propagazione dei log al logger root, evitando output duplicati
     logger.propagate = False
-    
-    # 如果已经有处理器，不重复添加
+
+    # Se ci sono già handler, non aggiungerne altri
     if logger.handlers:
         return logger
-    
-    # 日志格式
+
+    # Formato dei log
     detailed_formatter = logging.Formatter(
         '[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
-    
+
     simple_formatter = logging.Formatter(
         '[%(asctime)s] %(levelname)s: %(message)s',
         datefmt='%H:%M:%S'
     )
-    
-    # 1. 文件处理器 - 详细日志（按日期命名，带轮转）
+
+    # 1. Handler file - log dettagliati (nome per data, con rotazione)
     log_filename = datetime.now().strftime('%Y-%m-%d') + '.log'
     file_handler = RotatingFileHandler(
         os.path.join(LOG_DIR, log_filename),
@@ -73,30 +73,30 @@ def setup_logger(name: str = 'mirofish', level: int = logging.DEBUG) -> logging.
     )
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(detailed_formatter)
-    
-    # 2. 控制台处理器 - 简洁日志（INFO及以上）
-    # 确保 Windows 下使用 UTF-8 编码，避免中文乱码
+
+    # 2. Handler console - log sintetici (INFO e superiori)
+    # Assicura la codifica UTF-8 su Windows per evitare caratteri illeggibili
     _ensure_utf8_stdout()
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(simple_formatter)
-    
-    # 添加处理器
+
+    # Aggiungi gli handler
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
-    
+
     return logger
 
 
 def get_logger(name: str = 'mirofish') -> logging.Logger:
     """
-    获取日志器（如果不存在则创建）
-    
+    Ottieni il logger (lo crea se non esiste)
+
     Args:
-        name: 日志器名称
-        
+        name: Nome del logger
+
     Returns:
-        日志器实例
+        Istanza del logger
     """
     logger = logging.getLogger(name)
     if not logger.handlers:
@@ -104,11 +104,11 @@ def get_logger(name: str = 'mirofish') -> logging.Logger:
     return logger
 
 
-# 创建默认日志器
+# Crea il logger predefinito
 logger = setup_logger()
 
 
-# 便捷方法
+# Metodi di convenienza
 def debug(msg, *args, **kwargs):
     logger.debug(msg, *args, **kwargs)
 
@@ -123,4 +123,3 @@ def error(msg, *args, **kwargs):
 
 def critical(msg, *args, **kwargs):
     logger.critical(msg, *args, **kwargs)
-

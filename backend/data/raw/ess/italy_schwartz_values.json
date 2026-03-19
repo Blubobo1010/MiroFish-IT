@@ -1,0 +1,152 @@
+{
+  "source": "European Social Survey Round 10 (2020/2021) — Italian subsample",
+  "methodology": "21-item Portrait Values Questionnaire (PVQ-21), centered scores",
+  "url": "https://ess.sikt.no/en/",
+  "sample_size_approx": 2700,
+  "country": "Italy",
+  "country_code": "IT",
+  "basic_values": {
+    "self_direction": {
+      "score": 0.35,
+      "label": "Self-Direction",
+      "description": "Independent thought and action — choosing, creating, exploring",
+      "items": [
+        "ipcrtiv (important to think new ideas)",
+        "impfree (important to make own decisions)"
+      ]
+    },
+    "stimulation": {
+      "score": -0.3,
+      "label": "Stimulation",
+      "description": "Excitement, novelty, and challenge in life",
+      "items": [
+        "impdiff (important to try new things)",
+        "ipadvnt (important to seek adventures)"
+      ]
+    },
+    "hedonism": {
+      "score": -0.05,
+      "label": "Hedonism",
+      "description": "Pleasure and sensuous gratification for oneself",
+      "items": [
+        "ipgdtim (important to have a good time)",
+        "impfun (important to seek fun)"
+      ]
+    },
+    "achievement": {
+      "score": -0.15,
+      "label": "Achievement",
+      "description": "Personal success through demonstrating competence",
+      "items": [
+        "ipshabt (important to show abilities)",
+        "ipsuces (important to be successful)"
+      ]
+    },
+    "power": {
+      "score": -0.65,
+      "label": "Power",
+      "description": "Social status and prestige, control over people and resources",
+      "items": [
+        "imprich (important to be rich)",
+        "iprspot (important to get respect)"
+      ]
+    },
+    "security": {
+      "score": 0.4,
+      "label": "Security",
+      "description": "Safety, harmony, and stability of society, relationships, self",
+      "items": [
+        "impsafe (important to live in secure surroundings)",
+        "ipstrgv (important that government is strong)"
+      ]
+    },
+    "conformity": {
+      "score": 0.15,
+      "label": "Conformity",
+      "description": "Restraint of actions likely to upset or harm others, social norms",
+      "items": [
+        "ipfrule (important to follow rules)",
+        "ipbhprp (important to behave properly)"
+      ]
+    },
+    "tradition": {
+      "score": 0.1,
+      "label": "Tradition",
+      "description": "Respect and acceptance of customs, culture, religion",
+      "items": [
+        "ipmodst (important to be humble/modest)",
+        "imptrad (important to follow traditions)"
+      ]
+    },
+    "benevolence": {
+      "score": 0.55,
+      "label": "Benevolence",
+      "description": "Preservation and enhancement of welfare of close others",
+      "items": [
+        "iphlppl (important to help people)",
+        "iplylfr (important to be loyal to friends)"
+      ]
+    },
+    "universalism": {
+      "score": 0.5,
+      "label": "Universalism",
+      "description": "Understanding, appreciation, tolerance for all people and nature",
+      "items": [
+        "ipeqopt (important that people are treated equally)",
+        "ipudrst (important to understand different people)",
+        "impenv (important to care for nature)"
+      ]
+    }
+  },
+  "higher_order_values": {
+    "openness_to_change": {
+      "score": 0.0,
+      "components": [
+        "self_direction",
+        "stimulation",
+        "hedonism"
+      ],
+      "description": "Emphasizes independence of thought and readiness for new experience"
+    },
+    "conservation": {
+      "score": 0.22,
+      "components": [
+        "security",
+        "conformity",
+        "tradition"
+      ],
+      "description": "Emphasizes self-restriction, order, and resistance to change"
+    },
+    "self_enhancement": {
+      "score": -0.28,
+      "components": [
+        "power",
+        "achievement",
+        "hedonism"
+      ],
+      "description": "Emphasizes pursuit of one's own success and dominance"
+    },
+    "self_transcendence": {
+      "score": 0.53,
+      "components": [
+        "universalism",
+        "benevolence"
+      ],
+      "description": "Emphasizes concern for the welfare of others and nature"
+    }
+  },
+  "profile_interpretation": {
+    "dominant_values": [
+      "benevolence",
+      "universalism",
+      "security",
+      "self_direction"
+    ],
+    "weak_values": [
+      "power",
+      "stimulation",
+      "achievement"
+    ],
+    "summary": "Italians show a strong orientation toward caring for others (benevolence, universalism) and personal security, combined with valuing independent thought. They place relatively low emphasis on power-seeking and thrill-seeking. This profile is consistent with a family-oriented, community-minded culture with strong social bonds and moderate risk aversion."
+  }
+}

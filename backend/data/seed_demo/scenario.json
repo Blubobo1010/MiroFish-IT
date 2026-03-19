@@ -1,0 +1,26 @@
+{
+  "scenario_id": "demo_superbonus_110",
+  "title": "Dibattito sul Superbonus 110% — Impatto regionale e opinione pubblica",
+  "description": "Simulazione multi-agente del dibattito italiano sul Superbonus 110%, la misura di incentivo fiscale per la ristrutturazione edilizia. Il tema coinvolge prospettive economiche, politiche e sociali diverse tra Nord e Sud Italia, con forte polarizzazione dell'opinione pubblica.",
+  "simulation_requirement": "Simulare il dibattito pubblico italiano sul Superbonus 110% su una piattaforma social, con agenti calibrati regionalmente che rappresentano diverse posizioni: sostenitori (settore edile, proprietari), critici (economisti, contribuenti), e osservatori istituzionali. La simulazione deve evidenziare le differenze Nord-Sud nell'atteggiamento verso la misura.",
+  "topics": [
+    "Superbonus 110%",
+    "Ristrutturazione edilizia",
+    "Debito pubblico",
+    "Incentivi fiscali",
+    "Efficienza energetica",
+    "Politica economica italiana"
+  ],
+  "regions_involved": [
+    {"nuts2": "ITC4", "name": "Lombardia", "zone": "north"},
+    {"nuts2": "ITI4", "name": "Lazio", "zone": "center"},
+    {"nuts2": "ITF3", "name": "Campania", "zone": "south"},
+    {"nuts2": "ITG1", "name": "Sicilia", "zone": "south"},
+    {"nuts2": "ITH5", "name": "Emilia-Romagna", "zone": "north"}
+  ],
+  "expected_dynamics": {
+    "north": "Posizione pragmatica, attenzione ai costi per il contribuente e all'efficienza della misura. Maggiore scetticismo verso le frodi.",
+    "center": "Posizione mista, influenzata dalla vicinanza alla politica romana. Focus su aspetti normativi e burocratici.",
+    "south": "Forte sostegno alla misura come leva di sviluppo economico locale. Sensibilità verso l'occupazione nel settore edile."
+  }
+}

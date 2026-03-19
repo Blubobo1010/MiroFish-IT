@@ -1,5 +1,5 @@
 """
-业务服务模块
+Modulo servizi — MiroFish-IT
 """
 
 from .ontology_generator import OntologyGenerator
@@ -7,6 +7,7 @@ from .graph_builder import GraphBuilderService
 from .text_processor import TextProcessor
 from .zep_entity_reader import ZepEntityReader, EntityNode, FilteredEntities
 from .oasis_profile_generator import OasisProfileGenerator, OasisAgentProfile
+from .calibration_service import CalibrationService
 from .simulation_manager import SimulationManager, SimulationState, SimulationStatus
 from .simulation_config_generator import (
     SimulationConfigGenerator, 
@@ -38,14 +39,15 @@ from .simulation_ipc import (
 )
 
 __all__ = [
-    'OntologyGenerator', 
-    'GraphBuilderService', 
+    'OntologyGenerator',
+    'GraphBuilderService',
     'TextProcessor',
     'ZepEntityReader',
     'EntityNode',
     'FilteredEntities',
     'OasisProfileGenerator',
     'OasisAgentProfile',
+    'CalibrationService',
     'SimulationManager',
     'SimulationState',
     'SimulationStatus',

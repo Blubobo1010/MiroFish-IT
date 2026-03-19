@@ -1,0 +1,59 @@
+{
+  "source": "European Social Survey Round 10 (2020/2021)",
+  "indicators": {
+    "trust_people": {
+      "value": 4.8,
+      "scale": "0-10 (0=can't be too careful, 10=most people can be trusted)",
+      "label": "Generalized trust in people",
+      "eu_average": 5.2
+    },
+    "trust_parliament": {
+      "value": 3.8,
+      "scale": "0-10 (0=no trust, 10=complete trust)",
+      "label": "Trust in national parliament",
+      "eu_average": 4.3
+    },
+    "trust_legal_system": {
+      "value": 4.5,
+      "scale": "0-10",
+      "label": "Trust in the legal system",
+      "eu_average": 5.0
+    },
+    "trust_police": {
+      "value": 6.2,
+      "scale": "0-10",
+      "label": "Trust in the police",
+      "eu_average": 6.4
+    },
+    "trust_politicians": {
+      "value": 3.0,
+      "scale": "0-10",
+      "label": "Trust in politicians",
+      "eu_average": 3.5
+    },
+    "life_satisfaction": {
+      "value": 6.8,
+      "scale": "0-10 (0=extremely dissatisfied, 10=extremely satisfied)",
+      "label": "Overall life satisfaction",
+      "eu_average": 7.0
+    },
+    "happiness": {
+      "value": 7.0,
+      "scale": "0-10 (0=extremely unhappy, 10=extremely happy)",
+      "label": "Self-reported happiness",
+      "eu_average": 7.2
+    },
+    "health_subjective": {
+      "value": 3.5,
+      "scale": "1-5 (1=very bad, 5=very good)",
+      "label": "Subjective general health",
+      "eu_average": 3.7
+    },
+    "social_meetings_frequency": {
+      "value": 4.8,
+      "scale": "1-7 (1=never, 7=every day)",
+      "label": "How often socially meet with friends/relatives/colleagues",
+      "eu_average": 4.5
+    }
+  }
+}

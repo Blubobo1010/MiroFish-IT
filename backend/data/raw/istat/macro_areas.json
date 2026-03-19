@@ -1,0 +1,33 @@
+{
+  "Nord-Ovest": [
+    "ITC1",
+    "ITC2",
+    "ITC3",
+    "ITC4"
+  ],
+  "Nord-Est": [
+    "ITH1",
+    "ITH2",
+    "ITH3",
+    "ITH4",
+    "ITH5"
+  ],
+  "Centro": [
+    "ITI1",
+    "ITI2",
+    "ITI3",
+    "ITI4"
+  ],
+  "Sud": [
+    "ITF1",
+    "ITF2",
+    "ITF3",
+    "ITF4",
+    "ITF5",
+    "ITF6"
+  ],
+  "Isole": [
+    "ITG1",
+    "ITG2"
+  ]
+}

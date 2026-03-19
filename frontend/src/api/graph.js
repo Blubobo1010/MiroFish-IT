@@ -1,12 +1,12 @@
 import service, { requestWithRetry } from './index'
 
 /**
- * 生成本体（上传文档和模拟需求）
- * @param {Object} data - 包含files, simulation_requirement, project_name等
+ * Genera l'ontologia (caricamento documenti e requisiti di simulazione)
+ * @param {Object} data - contiene files, simulation_requirement, project_name ecc.
  * @returns {Promise}
  */
 export function generateOntology(formData) {
-  return requestWithRetry(() => 
+  return requestWithRetry(() =>
     service({
       url: '/api/graph/ontology/generate',
       method: 'post',
@@ -19,8 +19,8 @@ export function generateOntology(formData) {
 }
 
 /**
- * 构建图谱
- * @param {Object} data - 包含project_id, graph_name等
+ * Costruisci il grafo
+ * @param {Object} data - contiene project_id, graph_name ecc.
  * @returns {Promise}
  */
 export function buildGraph(data) {
@@ -34,8 +34,8 @@ export function buildGraph(data) {
 }
 
 /**
- * 查询任务状态
- * @param {String} taskId - 任务ID
+ * Interroga lo stato del task
+ * @param {String} taskId - ID del task
  * @returns {Promise}
  */
 export function getTaskStatus(taskId) {
@@ -46,8 +46,8 @@ export function getTaskStatus(taskId) {
 }
 
 /**
- * 获取图谱数据
- * @param {String} graphId - 图谱ID
+ * Ottieni i dati del grafo
+ * @param {String} graphId - ID del grafo
  * @returns {Promise}
  */
 export function getGraphData(graphId) {
@@ -58,8 +58,8 @@ export function getGraphData(graphId) {
 }
 
 /**
- * 获取项目信息
- * @param {String} projectId - 项目ID
+ * Ottieni le informazioni del progetto
+ * @param {String} projectId - ID del progetto
  * @returns {Promise}
  */
 export function getProject(projectId) {

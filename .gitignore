@@ -2,7 +2,7 @@
 .DS_Store
 Thumbs.db
 
-# 环境变量（保护敏感信息）
+# Variabili ambiente (protezione dati sensibili)
 .env
 .env.local
 .env.*.local
@@ -36,7 +36,7 @@ yarn-error.log*
 *.swp
 *.swo
 
-# 测试
+# Test
 .pytest_cache/
 .coverage
 htmlcov/
@@ -45,16 +45,25 @@ htmlcov/
 .cursor/
 .claude/
 
-# 文档与测试程序
+# Documenti e programmi di test
 mydoc/
 mytest/
 
-# 日志文件
+# File di log
 backend/logs/
 *.log
 
-# 上传文件
+# File caricati
 backend/uploads/
 
-# Docker 数据
+# Dati Docker
 data/
+
+# Eccezione: dati di calibrazione ICF e seed demo (devono essere inclusi)
+!backend/data/
+!backend/data/processed/
+!backend/data/scripts/
+!backend/data/seed_demo/
+!backend/data/raw/
+# Escludi file grezzi pesanti (rigenera con run_pipeline.py)
+backend/data/raw/eurostat/*_raw.json

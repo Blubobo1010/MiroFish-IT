@@ -1,0 +1,653 @@
+{
+  "ITC1": {
+    "nuts2_code": "ITC1",
+    "name": "Piemonte",
+    "indicators": {
+      "gdp_eur": {
+        "value": 159055.31,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 165045.98,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 72.2,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 4251351,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITC2": {
+    "nuts2_code": "ITC2",
+    "name": "Valle d'Aosta/Vallée d'Aoste",
+    "indicators": {
+      "gdp_eur": {
+        "value": 5802.11,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 6020.64,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 77.3,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 123130,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITC3": {
+    "nuts2_code": "ITC3",
+    "name": "Liguria",
+    "indicators": {
+      "gdp_eur": {
+        "value": 58464.44,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 60666.45,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 72.2,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 1507636,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITC4": {
+    "nuts2_code": "ITC4",
+    "name": "Lombardia",
+    "indicators": {
+      "gdp_eur": {
+        "value": 490692.89,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 509174.39,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 74.6,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 9976509,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITH1": {
+    "nuts2_code": "ITH1",
+    "name": "Provincia Autonoma di Bolzano/Bozen",
+    "indicators": {
+      "gdp_eur": {
+        "value": 32935.64,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 34176.13,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 79.6,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 534147,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITH2": {
+    "nuts2_code": "ITH2",
+    "name": "Provincia Autonoma di Trento",
+    "indicators": {
+      "gdp_eur": {
+        "value": 25456.34,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 26415.13,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 75.6,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 542996,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITH3": {
+    "nuts2_code": "ITH3",
+    "name": "Veneto",
+    "indicators": {
+      "gdp_eur": {
+        "value": 197226.12,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 204654.46,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 75.7,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 4849553,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITH4": {
+    "nuts2_code": "ITH4",
+    "name": "Friuli-Venezia Giulia",
+    "indicators": {
+      "gdp_eur": {
+        "value": 45063.15,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 46760.41,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 73.8,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 1194248,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITH5": {
+    "nuts2_code": "ITH5",
+    "name": "Emilia-Romagna",
+    "indicators": {
+      "gdp_eur": {
+        "value": 194365.53,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 201686.13,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 75.9,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 4437578,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITI1": {
+    "nuts2_code": "ITI1",
+    "name": "Toscana",
+    "indicators": {
+      "gdp_eur": {
+        "value": 139527.64,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 144782.82,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 74.5,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 3661981,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITI2": {
+    "nuts2_code": "ITI2",
+    "name": "Umbria",
+    "indicators": {
+      "gdp_eur": {
+        "value": 26868.16,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 27880.12,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 71.8,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 856407,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITI3": {
+    "nuts2_code": "ITI3",
+    "name": "Marche",
+    "indicators": {
+      "gdp_eur": {
+        "value": 49374.18,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 51233.82,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 72.6,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 1484298,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITI4": {
+    "nuts2_code": "ITI4",
+    "name": "Lazio",
+    "indicators": {
+      "gdp_eur": {
+        "value": 241432.47,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 250525.81,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 68.1,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 5720536,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITF1": {
+    "nuts2_code": "ITF1",
+    "name": "Abruzzo",
+    "indicators": {
+      "gdp_eur": {
+        "value": 39536.1,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 41025.19,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 66.0,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 1272627,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITF2": {
+    "nuts2_code": "ITF2",
+    "name": "Molise",
+    "indicators": {
+      "gdp_eur": {
+        "value": 7874.47,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 8171.06,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 60.9,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 290636,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITF3": {
+    "nuts2_code": "ITF3",
+    "name": "Campania",
+    "indicators": {
+      "gdp_eur": {
+        "value": 133040.27,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 138051.12,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 48.4,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 5609536,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITF4": {
+    "nuts2_code": "ITF4",
+    "name": "Puglia",
+    "indicators": {
+      "gdp_eur": {
+        "value": 92160.48,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 95631.62,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 54.7,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 3907683,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITF5": {
+    "nuts2_code": "ITF5",
+    "name": "Basilicata",
+    "indicators": {
+      "gdp_eur": {
+        "value": 14836.27,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 15395.06,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 59.1,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 537577,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITF6": {
+    "nuts2_code": "ITF6",
+    "name": "Calabria",
+    "indicators": {
+      "gdp_eur": {
+        "value": 39064.46,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 40535.79,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 48.4,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 1846610,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITG1": {
+    "nuts2_code": "ITG1",
+    "name": "Sicilia",
+    "indicators": {
+      "gdp_eur": {
+        "value": 107067.1,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 111099.68,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 48.7,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 4814016,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  },
+  "ITG2": {
+    "nuts2_code": "ITG2",
+    "name": "Sardegna",
+    "indicators": {
+      "gdp_eur": {
+        "value": 41800.26,
+        "year": "2023",
+        "unit": "million EUR"
+      },
+      "gdp_pps": {
+        "value": 43374.63,
+        "year": "2023",
+        "unit": "million PPS (EU27 2020)"
+      },
+      "employment_rate": {
+        "value": 59.9,
+        "year": "2023",
+        "unit": "% (age 20-64)"
+      },
+      "population": {
+        "value": 1578146,
+        "year": "2023",
+        "unit": "persons"
+      },
+      "household_income_pps": {
+        "value": null,
+        "year": null,
+        "unit": "PPS per inhabitant (EU27 2020)"
+      }
+    }
+  }
+}

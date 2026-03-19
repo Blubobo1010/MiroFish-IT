@@ -1,6 +1,6 @@
 """
-LLM客户端封装
-统一使用OpenAI格式调用
+Wrapper client LLM
+Utilizza formato OpenAI unificato per le chiamate
 """
 
 import json
@@ -12,8 +12,8 @@ from ..config import Config
 
 
 class LLMClient:
-    """LLM客户端"""
-    
+    """Client LLM"""
+
     def __init__(
         self,
         api_key: Optional[str] = None,
@@ -23,15 +23,15 @@ class LLMClient:
         self.api_key = api_key or Config.LLM_API_KEY
         self.base_url = base_url or Config.LLM_BASE_URL
         self.model = model or Config.LLM_MODEL_NAME
-        
+
         if not self.api_key:
-            raise ValueError("LLM_API_KEY 未配置")
-        
+            raise ValueError("LLM_API_KEY non configurata")
+
         self.client = OpenAI(
             api_key=self.api_key,
             base_url=self.base_url
         )
-    
+
     def chat(
         self,
         messages: List[Dict[str, str]],
@@ -40,16 +40,16 @@ class LLMClient:
         response_format: Optional[Dict] = None
     ) -> str:
         """
-        发送聊天请求
-        
+        Invia una richiesta di chat
+
         Args:
-            messages: 消息列表
-            temperature: 温度参数
-            max_tokens: 最大token数
-            response_format: 响应格式（如JSON模式）
-            
+            messages: Lista dei messaggi
+            temperature: Parametro temperatura
+            max_tokens: Numero massimo di token
+            response_format: Formato della risposta (es. modalità JSON)
+
         Returns:
-            模型响应文本
+            Testo di risposta del modello
         """
         kwargs = {
             "model": self.model,
@@ -57,16 +57,16 @@ class LLMClient:
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
-        
+
         if response_format:
             kwargs["response_format"] = response_format
-        
+
         response = self.client.chat.completions.create(**kwargs)
         content = response.choices[0].message.content
-        # 部分模型（如MiniMax M2.5）会在content中包含<think>思考内容，需要移除
+        # Alcuni modelli (come MiniMax M2.5) possono includere contenuto <think> nella risposta, da rimuovere
         content = re.sub(r'<think>[\s\S]*?</think>', '', content).strip()
         return content
-    
+
     def chat_json(
         self,
         messages: List[Dict[str, str]],
@@ -74,15 +74,15 @@ class LLMClient:
         max_tokens: int = 4096
     ) -> Dict[str, Any]:
         """
-        发送聊天请求并返回JSON
-        
+        Invia una richiesta di chat e restituisci JSON
+
         Args:
-            messages: 消息列表
-            temperature: 温度参数
-            max_tokens: 最大token数
-            
+            messages: Lista dei messaggi
+            temperature: Parametro temperatura
+            max_tokens: Numero massimo di token
+
         Returns:
-            解析后的JSON对象
+            Oggetto JSON analizzato
         """
         response = self.chat(
             messages=messages,
@@ -90,7 +90,7 @@ class LLMClient:
             max_tokens=max_tokens,
             response_format={"type": "json_object"}
         )
-        # 清理markdown代码块标记
+        # Pulisci i marcatori di blocco codice markdown
         cleaned_response = response.strip()
         cleaned_response = re.sub(r'^```(?:json)?\s*\n?', '', cleaned_response, flags=re.IGNORECASE)
         cleaned_response = re.sub(r'\n?```\s*$', '', cleaned_response)
@@ -99,5 +99,4 @@ class LLMClient:
         try:
             return json.loads(cleaned_response)
         except json.JSONDecodeError:
-            raise ValueError(f"LLM返回的JSON格式无效: {cleaned_response}")
-
+            raise ValueError(f"Formato JSON non valido restituito da LLM: {cleaned_response}")

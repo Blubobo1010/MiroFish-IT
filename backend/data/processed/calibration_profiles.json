@@ -1,0 +1,2753 @@
+{
+  "ITC1": {
+    "nuts2_code": "ITC1",
+    "name": "Piemonte",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 159055.31,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 165045.98,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 72.2,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 4251351,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Ovest",
+          "net_income_mean": 39800,
+          "net_income_median": 32200,
+          "net_wealth_mean": 327000,
+          "net_wealth_median": 182000,
+          "saving_rate_pct": 12.5,
+          "home_ownership_pct": 72.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 4256350,
+        "median_age": 47.8,
+        "fertility_rate": 1.18,
+        "university_graduates_pct": 16.2,
+        "unemployment_rate": 6.8,
+        "internet_users_pct": 75.3,
+        "life_satisfaction_mean": 7.1,
+        "sport_regular_pct": 28.5,
+        "volunteer_pct": 13.2,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITC2": {
+    "nuts2_code": "ITC2",
+    "name": "Valle d'Aosta",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 5802.11,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 6020.64,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 77.3,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 123130,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Ovest",
+          "net_income_mean": 39800,
+          "net_income_median": 32200,
+          "net_wealth_mean": 327000,
+          "net_wealth_median": 182000,
+          "saving_rate_pct": 12.5,
+          "home_ownership_pct": 72.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 123130,
+        "median_age": 47.2,
+        "fertility_rate": 1.25,
+        "university_graduates_pct": 14.8,
+        "unemployment_rate": 5.9,
+        "internet_users_pct": 76.1,
+        "life_satisfaction_mean": 7.2,
+        "sport_regular_pct": 33.0,
+        "volunteer_pct": 15.1,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITC3": {
+    "nuts2_code": "ITC3",
+    "name": "Liguria",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 58464.44,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 60666.45,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 72.2,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 1507636,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Ovest",
+          "net_income_mean": 39800,
+          "net_income_median": 32200,
+          "net_wealth_mean": 327000,
+          "net_wealth_median": 182000,
+          "saving_rate_pct": 12.5,
+          "home_ownership_pct": 72.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 1509805,
+        "median_age": 49.4,
+        "fertility_rate": 1.08,
+        "university_graduates_pct": 17.0,
+        "unemployment_rate": 7.5,
+        "internet_users_pct": 74.0,
+        "life_satisfaction_mean": 7.0,
+        "sport_regular_pct": 27.0,
+        "volunteer_pct": 11.8,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITC4": {
+    "nuts2_code": "ITC4",
+    "name": "Lombardia",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 490692.89,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 509174.39,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 74.6,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 9976509,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Ovest",
+          "net_income_mean": 39800,
+          "net_income_median": 32200,
+          "net_wealth_mean": 327000,
+          "net_wealth_median": 182000,
+          "saving_rate_pct": 12.5,
+          "home_ownership_pct": 72.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 10019166,
+        "median_age": 45.8,
+        "fertility_rate": 1.26,
+        "university_graduates_pct": 18.5,
+        "unemployment_rate": 4.6,
+        "internet_users_pct": 78.5,
+        "life_satisfaction_mean": 7.2,
+        "sport_regular_pct": 30.2,
+        "volunteer_pct": 14.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITH1": {
+    "nuts2_code": "ITH1",
+    "name": "P.A. Bolzano",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 32935.64,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 34176.13,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 79.6,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 534147,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Est",
+          "net_income_mean": 40200,
+          "net_income_median": 33500,
+          "net_wealth_mean": 340000,
+          "net_wealth_median": 198000,
+          "saving_rate_pct": 13.0,
+          "home_ownership_pct": 75.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 536667,
+        "median_age": 43.5,
+        "fertility_rate": 1.6,
+        "university_graduates_pct": 15.0,
+        "unemployment_rate": 2.9,
+        "internet_users_pct": 80.0,
+        "life_satisfaction_mean": 7.5,
+        "sport_regular_pct": 38.0,
+        "volunteer_pct": 20.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITH2": {
+    "nuts2_code": "ITH2",
+    "name": "P.A. Trento",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 25456.34,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 26415.13,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 75.6,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 542996,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Est",
+          "net_income_mean": 40200,
+          "net_income_median": 33500,
+          "net_wealth_mean": 340000,
+          "net_wealth_median": 198000,
+          "saving_rate_pct": 13.0,
+          "home_ownership_pct": 75.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 545425,
+        "median_age": 44.8,
+        "fertility_rate": 1.42,
+        "university_graduates_pct": 17.5,
+        "unemployment_rate": 3.8,
+        "internet_users_pct": 79.0,
+        "life_satisfaction_mean": 7.4,
+        "sport_regular_pct": 36.0,
+        "volunteer_pct": 18.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITH3": {
+    "nuts2_code": "ITH3",
+    "name": "Veneto",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 197226.12,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 204654.46,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 75.7,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 4849553,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Est",
+          "net_income_mean": 40200,
+          "net_income_median": 33500,
+          "net_wealth_mean": 340000,
+          "net_wealth_median": 198000,
+          "saving_rate_pct": 13.0,
+          "home_ownership_pct": 75.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 4847745,
+        "median_age": 46.5,
+        "fertility_rate": 1.24,
+        "university_graduates_pct": 15.8,
+        "unemployment_rate": 4.5,
+        "internet_users_pct": 76.0,
+        "life_satisfaction_mean": 7.1,
+        "sport_regular_pct": 29.5,
+        "volunteer_pct": 14.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITH4": {
+    "nuts2_code": "ITH4",
+    "name": "Friuli-Venezia Giulia",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 45063.15,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 46760.41,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 73.8,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 1194248,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Est",
+          "net_income_mean": 40200,
+          "net_income_median": 33500,
+          "net_wealth_mean": 340000,
+          "net_wealth_median": 198000,
+          "saving_rate_pct": 13.0,
+          "home_ownership_pct": 75.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 1194647,
+        "median_age": 48.0,
+        "fertility_rate": 1.16,
+        "university_graduates_pct": 16.5,
+        "unemployment_rate": 5.2,
+        "internet_users_pct": 76.5,
+        "life_satisfaction_mean": 7.1,
+        "sport_regular_pct": 29.0,
+        "volunteer_pct": 14.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITH5": {
+    "nuts2_code": "ITH5",
+    "name": "Emilia-Romagna",
+    "cultural_zone": "north",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 194365.53,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 201686.13,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 75.9,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 4437578,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Nord-Est",
+          "net_income_mean": 40200,
+          "net_income_median": 33500,
+          "net_wealth_mean": 340000,
+          "net_wealth_median": 198000,
+          "saving_rate_pct": 13.0,
+          "home_ownership_pct": 75.0,
+          "household_size_mean": 2.3,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 45,
+            "modulation": -5,
+            "zone": "north"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 81,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 72,
+            "modulation": 2,
+            "zone": "north"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 72,
+            "modulation": -3,
+            "zone": "north"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 66,
+            "modulation": 5,
+            "zone": "north"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 32,
+            "modulation": 2,
+            "zone": "north"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 4438937,
+        "median_age": 46.8,
+        "fertility_rate": 1.24,
+        "university_graduates_pct": 18.0,
+        "unemployment_rate": 5.0,
+        "internet_users_pct": 77.5,
+        "life_satisfaction_mean": 7.2,
+        "sport_regular_pct": 30.0,
+        "volunteer_pct": 14.8,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITI1": {
+    "nuts2_code": "ITI1",
+    "name": "Toscana",
+    "cultural_zone": "center",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 139527.64,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 144782.82,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 74.5,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 3661981,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Centro",
+          "net_income_mean": 36500,
+          "net_income_median": 29800,
+          "net_wealth_mean": 295000,
+          "net_wealth_median": 168000,
+          "saving_rate_pct": 10.5,
+          "home_ownership_pct": 73.0,
+          "household_size_mean": 2.4,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 50,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 76,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 67,
+            "modulation": -3,
+            "zone": "center"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 77,
+            "modulation": 2,
+            "zone": "center"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 61,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 31,
+            "modulation": 1,
+            "zone": "center"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 3665592,
+        "median_age": 47.8,
+        "fertility_rate": 1.14,
+        "university_graduates_pct": 17.2,
+        "unemployment_rate": 6.0,
+        "internet_users_pct": 75.5,
+        "life_satisfaction_mean": 7.1,
+        "sport_regular_pct": 28.0,
+        "volunteer_pct": 13.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITI2": {
+    "nuts2_code": "ITI2",
+    "name": "Umbria",
+    "cultural_zone": "center",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 26868.16,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 27880.12,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 71.8,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 856407,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Centro",
+          "net_income_mean": 36500,
+          "net_income_median": 29800,
+          "net_wealth_mean": 295000,
+          "net_wealth_median": 168000,
+          "saving_rate_pct": 10.5,
+          "home_ownership_pct": 73.0,
+          "household_size_mean": 2.4,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 50,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 76,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 67,
+            "modulation": -3,
+            "zone": "center"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 77,
+            "modulation": 2,
+            "zone": "center"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 61,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 31,
+            "modulation": 1,
+            "zone": "center"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 858812,
+        "median_age": 47.5,
+        "fertility_rate": 1.12,
+        "university_graduates_pct": 17.8,
+        "unemployment_rate": 7.2,
+        "internet_users_pct": 73.0,
+        "life_satisfaction_mean": 7.0,
+        "sport_regular_pct": 27.0,
+        "volunteer_pct": 13.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITI3": {
+    "nuts2_code": "ITI3",
+    "name": "Marche",
+    "cultural_zone": "center",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 49374.18,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 51233.82,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 72.6,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 1484298,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Centro",
+          "net_income_mean": 36500,
+          "net_income_median": 29800,
+          "net_wealth_mean": 295000,
+          "net_wealth_median": 168000,
+          "saving_rate_pct": 10.5,
+          "home_ownership_pct": 73.0,
+          "household_size_mean": 2.4,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 50,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 76,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 67,
+            "modulation": -3,
+            "zone": "center"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 77,
+            "modulation": 2,
+            "zone": "center"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 61,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 31,
+            "modulation": 1,
+            "zone": "center"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 1487150,
+        "median_age": 47.3,
+        "fertility_rate": 1.12,
+        "university_graduates_pct": 16.5,
+        "unemployment_rate": 6.8,
+        "internet_users_pct": 73.5,
+        "life_satisfaction_mean": 7.0,
+        "sport_regular_pct": 27.5,
+        "volunteer_pct": 12.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITI4": {
+    "nuts2_code": "ITI4",
+    "name": "Lazio",
+    "cultural_zone": "center",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 241432.47,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 250525.81,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 68.1,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 5720536,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Centro",
+          "net_income_mean": 36500,
+          "net_income_median": 29800,
+          "net_wealth_mean": 295000,
+          "net_wealth_median": 168000,
+          "saving_rate_pct": 10.5,
+          "home_ownership_pct": 73.0,
+          "household_size_mean": 2.4,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 50,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 76,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 67,
+            "modulation": -3,
+            "zone": "center"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 77,
+            "modulation": 2,
+            "zone": "center"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 61,
+            "modulation": 0,
+            "zone": "center"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 31,
+            "modulation": 1,
+            "zone": "center"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 5727049,
+        "median_age": 46.0,
+        "fertility_rate": 1.18,
+        "university_graduates_pct": 20.5,
+        "unemployment_rate": 7.8,
+        "internet_users_pct": 76.0,
+        "life_satisfaction_mean": 6.9,
+        "sport_regular_pct": 27.0,
+        "volunteer_pct": 10.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITF1": {
+    "nuts2_code": "ITF1",
+    "name": "Abruzzo",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 39536.1,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 41025.19,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 66.0,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 1272627,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Sud",
+          "net_income_mean": 25800,
+          "net_income_median": 21500,
+          "net_wealth_mean": 150000,
+          "net_wealth_median": 86000,
+          "saving_rate_pct": 5.5,
+          "home_ownership_pct": 70.0,
+          "household_size_mean": 2.6,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 1269860,
+        "median_age": 47.0,
+        "fertility_rate": 1.12,
+        "university_graduates_pct": 16.0,
+        "unemployment_rate": 8.5,
+        "internet_users_pct": 71.0,
+        "life_satisfaction_mean": 6.9,
+        "sport_regular_pct": 24.0,
+        "volunteer_pct": 10.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITF2": {
+    "nuts2_code": "ITF2",
+    "name": "Molise",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 7874.47,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 8171.06,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 60.9,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 290636,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Sud",
+          "net_income_mean": 25800,
+          "net_income_median": 21500,
+          "net_wealth_mean": 150000,
+          "net_wealth_median": 86000,
+          "saving_rate_pct": 5.5,
+          "home_ownership_pct": 70.0,
+          "household_size_mean": 2.6,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 290769,
+        "median_age": 48.0,
+        "fertility_rate": 1.02,
+        "university_graduates_pct": 15.5,
+        "unemployment_rate": 10.5,
+        "internet_users_pct": 68.0,
+        "life_satisfaction_mean": 6.8,
+        "sport_regular_pct": 22.0,
+        "volunteer_pct": 9.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITF3": {
+    "nuts2_code": "ITF3",
+    "name": "Campania",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 133040.27,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 138051.12,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 48.4,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 5609536,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Sud",
+          "net_income_mean": 25800,
+          "net_income_median": 21500,
+          "net_wealth_mean": 150000,
+          "net_wealth_median": 86000,
+          "saving_rate_pct": 5.5,
+          "home_ownership_pct": 70.0,
+          "household_size_mean": 2.6,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 5588615,
+        "median_age": 43.5,
+        "fertility_rate": 1.28,
+        "university_graduates_pct": 13.5,
+        "unemployment_rate": 17.8,
+        "internet_users_pct": 65.0,
+        "life_satisfaction_mean": 6.5,
+        "sport_regular_pct": 18.0,
+        "volunteer_pct": 7.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITF4": {
+    "nuts2_code": "ITF4",
+    "name": "Puglia",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 92160.48,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 95631.62,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 54.7,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 3907683,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Sud",
+          "net_income_mean": 25800,
+          "net_income_median": 21500,
+          "net_wealth_mean": 150000,
+          "net_wealth_median": 86000,
+          "saving_rate_pct": 5.5,
+          "home_ownership_pct": 70.0,
+          "household_size_mean": 2.6,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 3900852,
+        "median_age": 46.0,
+        "fertility_rate": 1.15,
+        "university_graduates_pct": 13.8,
+        "unemployment_rate": 13.5,
+        "internet_users_pct": 66.0,
+        "life_satisfaction_mean": 6.6,
+        "sport_regular_pct": 20.0,
+        "volunteer_pct": 8.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITF5": {
+    "nuts2_code": "ITF5",
+    "name": "Basilicata",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 14836.27,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 15395.06,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 59.1,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 537577,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Sud",
+          "net_income_mean": 25800,
+          "net_income_median": 21500,
+          "net_wealth_mean": 150000,
+          "net_wealth_median": 86000,
+          "saving_rate_pct": 5.5,
+          "home_ownership_pct": 70.0,
+          "household_size_mean": 2.6,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 539999,
+        "median_age": 47.5,
+        "fertility_rate": 1.05,
+        "university_graduates_pct": 14.0,
+        "unemployment_rate": 10.0,
+        "internet_users_pct": 67.0,
+        "life_satisfaction_mean": 6.7,
+        "sport_regular_pct": 21.0,
+        "volunteer_pct": 8.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITF6": {
+    "nuts2_code": "ITF6",
+    "name": "Calabria",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 39064.46,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 40535.79,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 48.4,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 1846610,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Sud",
+          "net_income_mean": 25800,
+          "net_income_median": 21500,
+          "net_wealth_mean": 150000,
+          "net_wealth_median": 86000,
+          "saving_rate_pct": 5.5,
+          "home_ownership_pct": 70.0,
+          "household_size_mean": 2.6,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 1837520,
+        "median_age": 45.5,
+        "fertility_rate": 1.15,
+        "university_graduates_pct": 13.0,
+        "unemployment_rate": 18.5,
+        "internet_users_pct": 63.0,
+        "life_satisfaction_mean": 6.4,
+        "sport_regular_pct": 17.0,
+        "volunteer_pct": 6.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITG1": {
+    "nuts2_code": "ITG1",
+    "name": "Sicilia",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 107067.1,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 111099.68,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 48.7,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 4814016,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Isole",
+          "net_income_mean": 24500,
+          "net_income_median": 20200,
+          "net_wealth_mean": 140000,
+          "net_wealth_median": 78000,
+          "saving_rate_pct": 4.8,
+          "home_ownership_pct": 68.0,
+          "household_size_mean": 2.5,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 4801468,
+        "median_age": 44.8,
+        "fertility_rate": 1.22,
+        "university_graduates_pct": 13.0,
+        "unemployment_rate": 17.0,
+        "internet_users_pct": 64.0,
+        "life_satisfaction_mean": 6.5,
+        "sport_regular_pct": 18.0,
+        "volunteer_pct": 6.0,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  },
+  "ITG2": {
+    "nuts2_code": "ITG2",
+    "name": "Sardegna",
+    "cultural_zone": "south",
+    "layers": {
+      "economic": {
+        "gdp_eur": {
+          "value": 41800.26,
+          "year": "2023",
+          "unit": "million EUR"
+        },
+        "gdp_pps": {
+          "value": 43374.63,
+          "year": "2023",
+          "unit": "million PPS (EU27 2020)"
+        },
+        "employment_rate": {
+          "value": 59.9,
+          "year": "2023",
+          "unit": "% (age 20-64)"
+        },
+        "population": {
+          "value": 1578146,
+          "year": "2023",
+          "unit": "persons"
+        },
+        "ibf": {
+          "macro_area": "Isole",
+          "net_income_mean": 24500,
+          "net_income_median": 20200,
+          "net_wealth_mean": 140000,
+          "net_wealth_median": 78000,
+          "saving_rate_pct": 4.8,
+          "home_ownership_pct": 68.0,
+          "household_size_mean": 2.5,
+          "source": "Banca d'Italia IBF 2020"
+        }
+      },
+      "cultural": {
+        "hofstede_6d": {
+          "PDI": {
+            "national_score": 50,
+            "regional_estimate": 55,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "IDV": {
+            "national_score": 76,
+            "regional_estimate": 68,
+            "modulation": -8,
+            "zone": "south"
+          },
+          "MAS": {
+            "national_score": 70,
+            "regional_estimate": 68,
+            "modulation": -2,
+            "zone": "south"
+          },
+          "UAI": {
+            "national_score": 75,
+            "regional_estimate": 80,
+            "modulation": 5,
+            "zone": "south"
+          },
+          "LTO": {
+            "national_score": 61,
+            "regional_estimate": 56,
+            "modulation": -5,
+            "zone": "south"
+          },
+          "IVR": {
+            "national_score": 30,
+            "regional_estimate": 27,
+            "modulation": -3,
+            "zone": "south"
+          }
+        },
+        "schwartz": {
+          "basic_values": {
+            "self_direction": 0.35,
+            "stimulation": -0.3,
+            "hedonism": -0.05,
+            "achievement": -0.15,
+            "power": -0.65,
+            "security": 0.4,
+            "conformity": 0.15,
+            "tradition": 0.1,
+            "benevolence": 0.55,
+            "universalism": 0.5
+          },
+          "higher_order": {
+            "openness_to_change": 0.0,
+            "conservation": 0.22,
+            "self_enhancement": -0.28,
+            "self_transcendence": 0.53
+          },
+          "dominant_values": [
+            "benevolence",
+            "universalism",
+            "security",
+            "self_direction"
+          ],
+          "source": "ESS Round 10 (2020/2021)"
+        }
+      },
+      "demographic": {
+        "population": 1575028,
+        "median_age": 48.5,
+        "fertility_rate": 0.98,
+        "university_graduates_pct": 14.5,
+        "unemployment_rate": 12.0,
+        "internet_users_pct": 70.0,
+        "life_satisfaction_mean": 6.8,
+        "sport_regular_pct": 23.0,
+        "volunteer_pct": 9.5,
+        "source": "ISTAT Noi Italia / BES 2023"
+      },
+      "social": {
+        "trust_people": 4.8,
+        "trust_parliament": 3.8,
+        "trust_legal_system": 4.5,
+        "trust_police": 6.2,
+        "trust_politicians": 3.0,
+        "life_satisfaction": 6.8,
+        "happiness": 7.0,
+        "health_subjective": 3.5,
+        "social_meetings_frequency": 4.8,
+        "source": "ESS Round 10 (2020/2021)"
+      }
+    }
+  }
+}
