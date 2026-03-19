@@ -6,6 +6,11 @@
 </br>
 <em>Multi-agent simulation with EU institutional data at NUTS-2 regional granularity</em>
 
+[![Fork of MiroFish](https://img.shields.io/badge/fork%20of-MiroFish%20(35K+%20⭐)-DAA520?style=flat-square)](https://github.com/666ghj/MiroFish)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue?style=flat-square)](./LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11%20|%203.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![NUTS-2 Regions](https://img.shields.io/badge/NUTS--2-21%20Italian%20regions-1A936F?style=flat-square)](https://ec.europa.eu/eurostat/web/nuts)
+
 **English** | [Italiano](./README.md) | [User Guide (IT)](./GUIDA.md)
 
 </div>
@@ -163,10 +168,15 @@ frontend/
 
 The Institutional Calibration Framework (ICF) uses open data from Eurostat, ISTAT, Bank of Italy, and the European Social Survey.
 
+## Paper
+
+> 📄 arXiv paper in preparation: *"Institutional Calibration Framework for Synthetic Populations"* — 3-condition experimental design (Baseline vs Country vs NUTS-2 Full) with Cultural Turing Test.
+
 ## Author
 
-**Andrea Lorini** — research on institutional calibration of synthetic populations for European markets.
+**[Andrea Lorini](https://github.com/Blubobo1010)** — research on institutional calibration of synthetic populations for European markets.
+Contact: [andrea@ai-audit.it](mailto:andrea@ai-audit.it)
 
 ## License
 
-This project is released under the same license as the upstream MiroFish repository.
+[AGPL-3.0](./LICENSE) — same license as the upstream MiroFish repository.
