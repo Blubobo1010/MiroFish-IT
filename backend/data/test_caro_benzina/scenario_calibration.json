@@ -1,0 +1,87 @@
+{
+  "_description": "Dati di calibrazione specifici per lo scenario Caro-Benzina, marzo 2026. Strato 4 del framework ICF. Fonti: MIMIT Osservaprezzi, ISTAT COICOP 07, ACI, ISTAT Aspetti Vita Quotidiana, ISTAT Cittadini e ICT.",
+  "_reference_date": "2026-03-18",
+
+  "national": {
+    "benzina_self_media_eur_l": 1.856,
+    "gasolio_self_media_eur_l": 2.089,
+    "variazione_2_settimane_pct": 20.0,
+    "reddito_medio_familiare_netto_eur": 35000,
+    "hofstede": {
+      "PDI": 50, "IDV": 76, "MAS": 70, "UAI": 75, "LTO": 61, "IVR": 30
+    },
+    "auto_per_1000_abitanti": 670,
+    "uso_tpl_pct": 15.2,
+    "acquisti_online_pct": 47.2,
+    "spesa_trasporti_coicop07_pct_budget": 5.8
+  },
+
+  "ITC4": {
+    "region_name": "Lombardia",
+    "zone": "north",
+    "benzina_self_eur_l": 1.842,
+    "gasolio_self_eur_l": 2.071,
+    "variazione_2_settimane_pct": 12.5,
+    "auto_per_1000_abitanti": 610,
+    "uso_tpl_pct": 28.5,
+    "acquisti_online_pct": 62.0,
+    "spesa_trasporti_coicop07_eur_anno": 3850,
+    "spesa_trasporti_coicop07_pct_budget": 3.2,
+    "incidenza_carburante_pct_budget": 3.2,
+    "copertura_tpl": "Ottima nelle aree urbane (Milano, Brescia, Bergamo). Metro, tram, bus frequenti. Abbonamento ATM Milano ~39 EUR/mese. In provincia copertura buona ma meno capillare.",
+    "tipo_comuni_distribuzione": {
+      "metropolitano": 0.35,
+      "oltre_50k": 0.20,
+      "10k_50k": 0.30,
+      "sotto_10k": 0.15
+    },
+    "profilo_mobilita": "Alta intermodalita. Molti pendolari usano treno+metro. Bike sharing diffuso nelle citta. Carsharing presente a Milano, Brescia. Auto usata soprattutto nel weekend e per spostamenti extra-urbani.",
+    "profilo_digitale": "Alta digital literacy. E-commerce diffuso, specialmente nella fascia 25-54. Amazon, ePRICE, Esselunga online tra i piu usati. Pagamenti digitali molto diffusi."
+  },
+
+  "ITF3": {
+    "region_name": "Campania",
+    "zone": "south",
+    "benzina_self_eur_l": 1.875,
+    "gasolio_self_eur_l": 2.120,
+    "variazione_2_settimane_pct": 18.0,
+    "auto_per_1000_abitanti": 640,
+    "uso_tpl_pct": 12.8,
+    "acquisti_online_pct": 38.5,
+    "spesa_trasporti_coicop07_eur_anno": 2800,
+    "spesa_trasporti_coicop07_pct_budget": 7.2,
+    "incidenza_carburante_pct_budget": 9.5,
+    "copertura_tpl": "Discreta a Napoli citta (metro linee 1 e 6, Circumvesuviana, bus ANM). Molto scarsa in provincia (Avellino, Benevento, Caserta interna). Servizi inaffidabili e poco frequenti fuori dal capoluogo.",
+    "tipo_comuni_distribuzione": {
+      "metropolitano": 0.25,
+      "oltre_50k": 0.15,
+      "10k_50k": 0.35,
+      "sotto_10k": 0.25
+    },
+    "profilo_mobilita": "Forte dipendenza dall'auto, specialmente in provincia. Due auto per famiglia e la norma nelle aree rurali/semi-urbane. A Napoli citta uso misto auto+TPL. Carsharing quasi assente.",
+    "profilo_digitale": "Digital literacy media. E-commerce in crescita ma ancora sotto la media nazionale, soprattutto tra over 55 e in provincia. Molti preferiscono il negozio fisico per fiducia e abitudine."
+  },
+
+  "ITG1": {
+    "region_name": "Sicilia",
+    "zone": "south",
+    "benzina_self_eur_l": 1.898,
+    "gasolio_self_eur_l": 2.150,
+    "variazione_2_settimane_pct": 19.0,
+    "auto_per_1000_abitanti": 680,
+    "uso_tpl_pct": 8.5,
+    "acquisti_online_pct": 32.0,
+    "spesa_trasporti_coicop07_eur_anno": 2400,
+    "spesa_trasporti_coicop07_pct_budget": 8.8,
+    "incidenza_carburante_pct_budget": 12.0,
+    "copertura_tpl": "Scarsa ovunque tranne Palermo e Catania (bus urbani, metro leggera Catania). Nei comuni sotto 20.000 abitanti il TPL e quasi inesistente. Treni regionali lenti e poco frequenti. Nessun carsharing.",
+    "tipo_comuni_distribuzione": {
+      "metropolitano": 0.15,
+      "oltre_50k": 0.10,
+      "10k_50k": 0.30,
+      "sotto_10k": 0.45
+    },
+    "profilo_mobilita": "Dipendenza totale dall'auto. Tasso di motorizzazione tra i piu alti d'Italia. Strade spesso in cattive condizioni. Nessuna alternativa praticabile in gran parte del territorio. Molti anziani guidano auto vecchie con consumi elevati.",
+    "profilo_digitale": "Bassa digital literacy, specialmente tra over 55 e nei piccoli comuni. E-commerce poco usato: problemi di connettivita, diffidenza verso pagamenti online, preferenza per acquisto in presenza. Mercato settimanale ancora centrale nella spesa alimentare."
+  }
+}

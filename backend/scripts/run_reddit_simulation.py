@@ -578,7 +578,7 @@ class RedditSimulationRunner:
             agent_graph=self.agent_graph,
             platform=oasis.DefaultPlatformType.REDDIT,
             database_path=db_path,
-            semaphore=30,  # Limitare il numero massimo di richieste LLM concorrenti, per evitare sovraccarico API
+            semaphore=2,  # Ridotto per compatibilita' con LLM locali (Ollama). Aumentare a 30 per API cloud.
         )
 
         await self.env.reset()
@@ -623,8 +623,11 @@ class RedditSimulationRunner:
         print("\nInizio ciclo di simulazione...")
         start_time = datetime.now()
 
+        # Inizio simulazione alle 9:00 (per garantire attivita' degli agenti)
+        start_hour_offset = 9 * 60  # 9:00 AM in minuti
+
         for round_num in range(total_rounds):
-            simulated_minutes = round_num * minutes_per_round
+            simulated_minutes = start_hour_offset + round_num * minutes_per_round
             simulated_hour = (simulated_minutes // 60) % 24
             simulated_day = simulated_minutes // (60 * 24) + 1
 

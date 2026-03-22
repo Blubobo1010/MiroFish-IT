@@ -467,25 +467,38 @@ def prepare_simulation():
         use_llm_for_profiles = data.get('use_llm_for_profiles', True)
         parallel_profile_count = data.get('parallel_profile_count', 5)
         nuts2_region = data.get('nuts2_region')  # Calibrazione ICF regionale
-        
+        prebuilt_profiles_path = data.get('prebuilt_profiles_path')  # Profili pre-costruiti (opzionale)
+
         # ========== Ottieni sincrono il conteggio delle entità (prima dell'avvio del task in background) ==========
-        # In questo modo il frontend può ottenere il numero totale di Agent attesi immediatamente dopo la chiamata a prepare
-        try:
-            logger.info(f"Ottenimento sincrono conteggio entità: graph_id={state.graph_id}")
-            reader = ZepEntityReader()
-            # Lettura rapida delle entità (non servono informazioni sugli archi, solo conteggio)
-            filtered_preview = reader.filter_defined_entities(
-                graph_id=state.graph_id,
-                defined_entity_types=entity_types_list,
-                enrich_with_edges=False  # Non ottenere informazioni sugli archi, per velocizzare
-            )
-            # Salva il conteggio delle entità nello stato (per il frontend da ottenere immediatamente)
-            state.entities_count = filtered_preview.filtered_count
-            state.entity_types = list(filtered_preview.entity_types)
-            logger.info(f"Conteggio entità previsto: {filtered_preview.filtered_count}, tipi: {filtered_preview.entity_types}")
-        except Exception as e:
-            logger.warning(f"Ottenimento sincrono conteggio entità fallito (verrà riprovato nel task in background): {e}")
-            # Il fallimento non influenza il flusso successivo, il task in background riotterrà il conteggio
+        # Se si usano profili pre-costruiti, conta direttamente dal file
+        if prebuilt_profiles_path:
+            try:
+                import json as _json
+                with open(prebuilt_profiles_path, 'r', encoding='utf-8') as f:
+                    _prebuilt = _json.load(f)
+                state.entities_count = len(_prebuilt)
+                state.entity_types = ['Person', 'CalibratedAgent']
+                logger.info(f"Profili pre-costruiti: {len(_prebuilt)} agenti da {prebuilt_profiles_path}")
+            except Exception as e:
+                logger.warning(f"Lettura anteprima profili pre-costruiti fallita: {e}")
+        else:
+            # In questo modo il frontend può ottenere il numero totale di Agent attesi immediatamente dopo la chiamata a prepare
+            try:
+                logger.info(f"Ottenimento sincrono conteggio entità: graph_id={state.graph_id}")
+                reader = ZepEntityReader()
+                # Lettura rapida delle entità (non servono informazioni sugli archi, solo conteggio)
+                filtered_preview = reader.filter_defined_entities(
+                    graph_id=state.graph_id,
+                    defined_entity_types=entity_types_list,
+                    enrich_with_edges=False  # Non ottenere informazioni sugli archi, per velocizzare
+                )
+                # Salva il conteggio delle entità nello stato (per il frontend da ottenere immediatamente)
+                state.entities_count = filtered_preview.filtered_count
+                state.entity_types = list(filtered_preview.entity_types)
+                logger.info(f"Conteggio entità previsto: {filtered_preview.filtered_count}, tipi: {filtered_preview.entity_types}")
+            except Exception as e:
+                logger.warning(f"Ottenimento sincrono conteggio entità fallito (verrà riprovato nel task in background): {e}")
+                # Il fallimento non influenza il flusso successivo, il task in background riotterrà il conteggio
 
         # Crea task asincrono
         task_manager = TaskManager()
@@ -518,7 +531,8 @@ def prepare_simulation():
                 def progress_callback(stage, progress, message, **kwargs):
                     # Calcola progresso totale
                     stage_weights = {
-                        "reading": (0, 20),           # 0-20%
+                        "reading": (0, 20),               # 0-20%
+                        "loading_profiles": (0, 20),      # 0-20% (profili pre-costruiti)
                         "generating_profiles": (20, 70),  # 20-70%
                         "generating_config": (70, 90),    # 70-90%
                         "copying_scripts": (90, 100)       # 90-100%
@@ -584,7 +598,8 @@ def prepare_simulation():
                     use_llm_for_profiles=use_llm_for_profiles,
                     progress_callback=progress_callback,
                     parallel_profile_count=parallel_profile_count,
-                    nuts2_region=nuts2_region
+                    nuts2_region=nuts2_region,
+                    prebuilt_profiles_path=prebuilt_profiles_path
                 )
                 
                 # Task completato

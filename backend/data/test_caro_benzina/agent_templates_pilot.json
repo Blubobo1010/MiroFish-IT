@@ -1,0 +1,353 @@
+{
+  "ITC4": [
+    {
+      "id": 1,
+      "name": "Francesca Bianchi",
+      "age": 38,
+      "gender": "female",
+      "profession": "Impiegata settore servizi",
+      "education": "Laurea",
+      "family": "Coppia con 1 figlio (6 anni)",
+      "income_net_eur": 42000,
+      "comune_type": "metropolitano",
+      "comune_name": "Milano",
+      "n_auto": 1,
+      "auto_desc": "un'auto usata nel weekend",
+      "uso_tpl": true,
+      "km_anno": 8000,
+      "acquisti_online": true,
+      "mbti": "ISTJ",
+      "topics": [
+        "Risparmio",
+        "Famiglia",
+        "Trasporti urbani"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Davide Russo",
+      "age": 42,
+      "gender": "male",
+      "profession": "Piccolo imprenditore (officina auto)",
+      "education": "Diploma tecnico",
+      "family": "Coppia con 3 figli (5, 8, 12 anni)",
+      "income_net_eur": 48000,
+      "comune_type": "10k_50k",
+      "comune_name": "Monza",
+      "n_auto": 2,
+      "auto_desc": "furgone da lavoro e auto familiare",
+      "uso_tpl": false,
+      "km_anno": 25000,
+      "acquisti_online": true,
+      "mbti": "ESTP",
+      "topics": [
+        "Auto",
+        "Impresa",
+        "Famiglia"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Ahmed El-Amin",
+      "age": 35,
+      "gender": "male",
+      "profession": "Rider consegne + magazziniere part-time",
+      "education": "Diploma (Egitto)",
+      "family": "Coppia con 2 figli piccoli (2, 4 anni)",
+      "income_net_eur": 18000,
+      "comune_type": "metropolitano",
+      "comune_name": "Milano",
+      "n_auto": 0,
+      "auto_desc": "scooter per le consegne",
+      "uso_tpl": true,
+      "km_anno": 15000,
+      "acquisti_online": false,
+      "mbti": "ISFP",
+      "topics": [
+        "Lavoro",
+        "Famiglia",
+        "Integrazione"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Giorgio Fontana",
+      "age": 72,
+      "gender": "male",
+      "profession": "Pensionato (ex artigiano)",
+      "education": "Licenza media",
+      "family": "Coppia, figli adulti",
+      "income_net_eur": 19000,
+      "comune_type": "sotto_10k",
+      "comune_name": "Abbiategrasso",
+      "n_auto": 1,
+      "auto_desc": "auto vecchia per spesa e medico",
+      "uso_tpl": false,
+      "km_anno": 5000,
+      "acquisti_online": false,
+      "mbti": "ISTJ",
+      "topics": [
+        "Orto",
+        "Pensione",
+        "Salute"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Valentina Orsini",
+      "age": 29,
+      "gender": "female",
+      "profession": "Social media manager",
+      "education": "Laurea",
+      "family": "Coppia senza figli",
+      "income_net_eur": 26000,
+      "comune_type": "metropolitano",
+      "comune_name": "Milano",
+      "n_auto": 0,
+      "auto_desc": "nessuna auto, carsharing occasionale",
+      "uso_tpl": true,
+      "km_anno": 1000,
+      "acquisti_online": true,
+      "mbti": "ENFP",
+      "topics": [
+        "Social media",
+        "Moda",
+        "Viaggi"
+      ]
+    }
+  ],
+  "ITF3": [
+    {
+      "id": 21,
+      "name": "Rosa Esposito",
+      "age": 42,
+      "gender": "female",
+      "profession": "Commessa part-time negozio abbigliamento",
+      "education": "Diploma",
+      "family": "Coppia con 2 figli (10, 14 anni), marito operaio",
+      "income_net_eur": 22000,
+      "comune_type": "10k_50k",
+      "comune_name": "Avellino",
+      "n_auto": 2,
+      "auto_desc": "due auto indispensabili, nessun TPL utile",
+      "uso_tpl": false,
+      "km_anno": 18000,
+      "acquisti_online": false,
+      "mbti": "ESFJ",
+      "topics": [
+        "Famiglia",
+        "Risparmio",
+        "Scuola figli"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Luigi Amato",
+      "age": 34,
+      "gender": "male",
+      "profession": "Cameriere in ristorante",
+      "education": "Diploma alberghiero",
+      "family": "Coppia con 1 figlio (3 anni)",
+      "income_net_eur": 16000,
+      "comune_type": "metropolitano",
+      "comune_name": "Napoli",
+      "n_auto": 1,
+      "auto_desc": "scooter e auto vecchia",
+      "uso_tpl": true,
+      "km_anno": 10000,
+      "acquisti_online": false,
+      "mbti": "ESFP",
+      "topics": [
+        "Ristorazione",
+        "Calcio Napoli",
+        "Quartiere"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Vincenzo Coppola",
+      "age": 52,
+      "gender": "male",
+      "profession": "Commerciante (ortofrutta al mercato)",
+      "education": "Licenza media",
+      "family": "Coppia con 2 figli adulti",
+      "income_net_eur": 25000,
+      "comune_type": "metropolitano",
+      "comune_name": "Napoli",
+      "n_auto": 1,
+      "auto_desc": "furgoncino per il mercato",
+      "uso_tpl": false,
+      "km_anno": 20000,
+      "acquisti_online": false,
+      "mbti": "ESTP",
+      "topics": [
+        "Commercio",
+        "Mercato",
+        "Costi trasporto"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Filomena Greco",
+      "age": 75,
+      "gender": "female",
+      "profession": "Pensionata (ex casalinga)",
+      "education": "Licenza elementare",
+      "family": "Vedova, vive sola, figli nel Nord",
+      "income_net_eur": 10000,
+      "comune_type": "sotto_10k",
+      "comune_name": "Montella",
+      "n_auto": 0,
+      "auto_desc": "non guida, dipende da vicini e figlio quando viene",
+      "uso_tpl": false,
+      "km_anno": 0,
+      "acquisti_online": false,
+      "mbti": "ISFJ",
+      "topics": [
+        "Chiesa",
+        "Salute",
+        "Figli lontani"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Francesco Perna",
+      "age": 30,
+      "gender": "male",
+      "profession": "Programmatore (remote)",
+      "education": "Laurea informatica",
+      "family": "Single",
+      "income_net_eur": 32000,
+      "comune_type": "metropolitano",
+      "comune_name": "Napoli",
+      "n_auto": 0,
+      "auto_desc": "nessuna auto, lavora da casa",
+      "uso_tpl": true,
+      "km_anno": 2000,
+      "acquisti_online": true,
+      "mbti": "INTP",
+      "topics": [
+        "Tecnologia",
+        "Gaming",
+        "Startup"
+      ]
+    }
+  ],
+  "ITG1": [
+    {
+      "id": 41,
+      "name": "Giuseppe Ferrara",
+      "age": 55,
+      "gender": "male",
+      "profession": "Pensionato (ex agricoltore)",
+      "education": "Licenza media",
+      "family": "Coppia, figli emigrati",
+      "income_net_eur": 16000,
+      "comune_type": "sotto_10k",
+      "comune_name": "Enna (provincia)",
+      "n_auto": 1,
+      "auto_desc": "auto vecchia, unico mezzo disponibile",
+      "uso_tpl": false,
+      "km_anno": 8000,
+      "acquisti_online": false,
+      "mbti": "ISTJ",
+      "topics": [
+        "Agricoltura",
+        "Paese",
+        "Pensione"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Rosalia Ferrante",
+      "age": 70,
+      "gender": "female",
+      "profession": "Pensionata (ex bracciante)",
+      "education": "Licenza elementare",
+      "family": "Vedova, vive con figlia",
+      "income_net_eur": 9000,
+      "comune_type": "sotto_10k",
+      "comune_name": "Niscemi",
+      "n_auto": 0,
+      "auto_desc": "non guida, dipende dalla figlia",
+      "uso_tpl": false,
+      "km_anno": 0,
+      "acquisti_online": false,
+      "mbti": "ISFJ",
+      "topics": [
+        "Chiesa",
+        "Salute",
+        "Nipoti"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Marco Ferrara",
+      "age": 26,
+      "gender": "male",
+      "profession": "Disoccupato (ex cameriere stagionale)",
+      "education": "Diploma",
+      "family": "Single, vive con genitori",
+      "income_net_eur": 4000,
+      "comune_type": "10k_50k",
+      "comune_name": "Caltanissetta",
+      "n_auto": 0,
+      "auto_desc": "usa lo scooter del padre",
+      "uso_tpl": false,
+      "km_anno": 6000,
+      "acquisti_online": false,
+      "mbti": "ISFP",
+      "topics": [
+        "Lavoro",
+        "Emigrazione",
+        "Musica"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Francesca Ferrara",
+      "age": 44,
+      "gender": "female",
+      "profession": "Impiegata comunale",
+      "education": "Laurea",
+      "family": "Coppia con 2 figli (7, 11 anni)",
+      "income_net_eur": 26000,
+      "comune_type": "metropolitano",
+      "comune_name": "Palermo",
+      "n_auto": 2,
+      "auto_desc": "due auto, entrambi pendolari",
+      "uso_tpl": false,
+      "km_anno": 16000,
+      "acquisti_online": true,
+      "mbti": "ESFJ",
+      "topics": [
+        "Pubblica amministrazione",
+        "Famiglia",
+        "Scuola"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Dario Ferrara",
+      "age": 33,
+      "gender": "male",
+      "profession": "Elettricista",
+      "education": "Qualifica professionale",
+      "family": "Coppia con 1 figlio (1 anno)",
+      "income_net_eur": 18000,
+      "comune_type": "10k_50k",
+      "comune_name": "Trapani",
+      "n_auto": 1,
+      "auto_desc": "furgoncino da lavoro",
+      "uso_tpl": false,
+      "km_anno": 20000,
+      "acquisti_online": false,
+      "mbti": "ISTP",
+      "topics": [
+        "Lavoro",
+        "Casa",
+        "Calcio"
+      ]
+    }
+  ]
+}

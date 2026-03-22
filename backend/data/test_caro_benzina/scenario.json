@@ -1,0 +1,120 @@
+{
+  "scenario_id": "test_caro_benzina_2026",
+  "title": "Caro-Benzina: reazioni dei consumatori italiani alla crisi carburante marzo 2026",
+  "description": "Crisi carburante Italia, marzo 2026. Benzina a 1,85 EUR/l, gasolio oltre 2 EUR/l. Causa: crisi Stretto di Hormuz, crollo 90% traffico petroliere. Rincari tra 7 e 10 centesimi in una notte, su carburante acquistato mesi prima a prezzi piu bassi. Il test misura come reagiscono i consumatori italiani in diverse regioni all'aumento del 20% del prezzo del carburante in 2 settimane.",
+  "simulation_requirement": "Osservare le reazioni dei consumatori italiani lungo 5 dimensioni: mobilita, spesa discrezionale, canale d'acquisto, scelta di marca, prioritizzazione. Confrontare 3 condizioni sperimentali (Baseline, Country, NUTS-2 Full) per misurare l'impatto della calibrazione istituzionale sulla qualita delle simulazioni.",
+  "topics": [
+    "Prezzo carburante",
+    "Crisi energetica",
+    "Comportamento consumatore",
+    "Spesa familiare",
+    "Mobilita urbana",
+    "Divario Nord-Sud",
+    "Inflazione",
+    "Potere d'acquisto"
+  ],
+  "regions_involved": [
+    {
+      "nuts2": "ITC4",
+      "name": "Lombardia",
+      "zone": "north",
+      "rationale": "Alta capacita di spesa, ottimo TPL, alta digital literacy"
+    },
+    {
+      "nuts2": "ITF3",
+      "name": "Campania",
+      "zone": "south",
+      "rationale": "Bassa capacita di spesa, TPL disomogeneo, alta dipendenza dall'auto in provincia"
+    },
+    {
+      "nuts2": "ITG1",
+      "name": "Sicilia",
+      "zone": "south",
+      "rationale": "Bassa capacita di spesa, TPL scarso, alta motorizzazione, bassa digital literacy"
+    }
+  ],
+  "reaction_dimensions": [
+    {
+      "id": "mobility",
+      "label": "Mobilita",
+      "question": "Riduce spostamenti in auto? Si sposta su TPL, bici, carsharing?"
+    },
+    {
+      "id": "discretionary_spending",
+      "label": "Spesa discrezionale",
+      "question": "Taglia ristorazione, abbigliamento, beauty, uscite?"
+    },
+    {
+      "id": "purchase_channel",
+      "label": "Canale d'acquisto",
+      "question": "Si sposta da negozio fisico a e-commerce?"
+    },
+    {
+      "id": "brand_choice",
+      "label": "Scelta di marca",
+      "question": "Passa da premium a discount/marca del distributore?"
+    },
+    {
+      "id": "prioritization",
+      "label": "Prioritizzazione",
+      "question": "Cosa sacrifica per primo, cosa protegge?"
+    }
+  ],
+  "experimental_conditions": [
+    {
+      "id": "A",
+      "label": "Baseline",
+      "description": "Profilo generico senza dati reali. Il modello inventa tutto."
+    },
+    {
+      "id": "B",
+      "label": "Country-level",
+      "description": "Dati nazionali aggregati. Nessuna differenziazione regionale."
+    },
+    {
+      "id": "C",
+      "label": "NUTS-2 Full",
+      "description": "Profilo calibrato sulla regione specifica dell'agente con 4 strati di dati reali."
+    }
+  ],
+  "agents_per_region": 20,
+  "total_agents": 180,
+  "expected_dynamics": {
+    "north": "Agenti lombardi: preoccupati ma meno colpiti economicamente. Il carburante incide poco sul budget (3-4%). Hanno alternative di mobilita (metro, TPL efficiente). Spostano acquisti online, riducono uso auto nel weekend. Non cambiano radicalmente stile di vita. Tagliano leisure/ristorazione marginalmente.",
+    "south_campania": "Agenti campani: impatto forte su famiglie a basso reddito, soprattutto in provincia dove l'auto e indispensabile. Carburante incide 8-10% sul budget. Tagliano uscite, abbigliamento, ristorazione. Pochi possono spostarsi su e-commerce (digital literacy media). Cercano di ridurre spostamenti ma hanno poche alternative al TPL.",
+    "south_sicilia": "Agenti siciliani: impatto massimo. Carburante incide 10-13% sul budget. Nessuna alternativa all'auto in piccoli comuni. Non usano e-commerce. Tagliano tutto tranne alimentari e bollette. Ansia forte, sensazione di impotenza. Acquisti solo in negozi locali e mercati."
+  },
+  "ground_truth_sources": [
+    {
+      "source": "MIMIT Osservaprezzi",
+      "url": "mimit.gov.it/it/prezzo-medio-carburanti/regioni",
+      "measures": "Prezzi carburante per regione — input dello shock"
+    },
+    {
+      "source": "Google Trends 'prezzo benzina'",
+      "url": "trends.google.com",
+      "measures": "Intensita della preoccupazione per regione"
+    },
+    {
+      "source": "Google Trends 'risparmio carburante'",
+      "url": "trends.google.com",
+      "measures": "Reazione attiva di adattamento"
+    },
+    {
+      "source": "Google Trends 'spesa online'",
+      "url": "trends.google.com",
+      "measures": "Shift di canale"
+    },
+    {
+      "source": "ISTAT indice vendite dettaglio non-alimentare",
+      "url": "dati.istat.it",
+      "measures": "Variazione spesa discrezionale"
+    },
+    {
+      "source": "ANAS Open Data",
+      "url": "strfrancesco.anas.it",
+      "measures": "Riduzione mobilita — traffico autostradale per tratta"
+    }
+  ],
+  "validation_metric": "Correlazione di Pearson (r) tra distribuzione regionale delle reazioni simulate e distribuzione regionale dei dati reali, per ciascuna condizione."
+}

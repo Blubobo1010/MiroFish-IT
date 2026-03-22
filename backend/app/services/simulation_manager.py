@@ -235,17 +235,15 @@ class SimulationManager:
         use_llm_for_profiles: bool = True,
         progress_callback: Optional[callable] = None,
         parallel_profile_count: int = 3,
-        nuts2_region: Optional[str] = None
+        nuts2_region: Optional[str] = None,
+        prebuilt_profiles_path: Optional[str] = None
     ) -> SimulationState:
         """
-        Prepara l'ambiente di simulazione (completamente automatizzato)
+        Prepara l'ambiente di simulazione
 
-        Passaggi:
-        1. Leggere e filtrare entita' dal grafo Zep
-        2. Generare OASIS Agent Profile per ogni entita' (miglioramento LLM opzionale, supporto parallelo)
-        3. Generare intelligentemente parametri di configurazione simulazione tramite LLM (tempo, attivita', frequenza messaggi, ecc.)
-        4. Salvare file di configurazione e file Profile
-        5. Copiare script preimpostati nella directory simulazione
+        Supporta due modalita':
+        A) Flusso standard: Zep -> entita' -> generazione profili LLM
+        B) Profili pre-costruiti: carica profili da file JSON, salta Zep e generazione LLM
 
         Args:
             simulation_id: ID simulazione
@@ -255,6 +253,9 @@ class SimulationManager:
             use_llm_for_profiles: Utilizzare LLM per generare profili dettagliati
             progress_callback: Funzione callback progresso (stage, progress, message)
             parallel_profile_count: Numero di profili da generare in parallelo, default 3
+            nuts2_region: Codice regione NUTS-2 per calibrazione ICF (opzionale)
+            prebuilt_profiles_path: Percorso file JSON con profili pre-costruiti (opzionale).
+                Se fornito, salta lettura Zep e generazione LLM profili.
 
         Returns:
             SimulationState
@@ -269,118 +270,232 @@ class SimulationManager:
 
             sim_dir = self._get_simulation_dir(simulation_id)
 
-            # ========== Fase 1: Lettura e filtraggio entita' ==========
-            if progress_callback:
-                progress_callback("reading", 0, "Connessione al grafo Zep...")
-            
-            reader = ZepEntityReader()
-            
-            if progress_callback:
-                progress_callback("reading", 30, "Lettura dati nodi...")
-            
-            filtered = reader.filter_defined_entities(
-                graph_id=state.graph_id,
-                defined_entity_types=defined_entity_types,
-                enrich_with_edges=True
-            )
-            
-            state.entities_count = filtered.filtered_count
-            state.entity_types = list(filtered.entity_types)
-            
-            if progress_callback:
-                progress_callback(
-                    "reading", 100,
-                    f"Completato, {filtered.filtered_count} entita' in totale",
-                    current=filtered.filtered_count,
-                    total=filtered.filtered_count
-                )
-            
-            if filtered.filtered_count == 0:
-                state.status = SimulationStatus.FAILED
-                state.error = "Nessuna entita' trovata che soddisfi i criteri, verificare che il grafo sia costruito correttamente"
-                self._save_simulation_state(state)
-                return state
-            
-            # ========== Fase 2: Generazione Agent Profile ==========
-            total_entities = len(filtered.entities)
-            
-            if progress_callback:
-                progress_callback(
-                    "generating_profiles", 0,
-                    "Inizio generazione...",
-                    current=0,
-                    total=total_entities
-                )
-            
-            # Crea generatore profili con calibrazione ICF
-            generator = OasisProfileGenerator(graph_id=state.graph_id, nuts2_region=nuts2_region)
-            
-            def profile_progress(current, total, msg):
+            # ========== Modalita' B: Profili pre-costruiti ==========
+            if prebuilt_profiles_path:
+                logger.info(f"Modalita' profili pre-costruiti: {prebuilt_profiles_path}")
+
+                if not os.path.exists(prebuilt_profiles_path):
+                    raise FileNotFoundError(
+                        f"File profili pre-costruiti non trovato: {prebuilt_profiles_path}"
+                    )
+
+                if progress_callback:
+                    progress_callback("loading_profiles", 0, "Caricamento profili pre-costruiti...")
+
+                with open(prebuilt_profiles_path, 'r', encoding='utf-8') as f:
+                    prebuilt_profiles = json.load(f)
+
+                if not isinstance(prebuilt_profiles, list) or len(prebuilt_profiles) == 0:
+                    raise ValueError(
+                        "Il file profili pre-costruiti deve contenere una lista non vuota di profili"
+                    )
+
+                state.entities_count = len(prebuilt_profiles)
+                state.profiles_count = len(prebuilt_profiles)
+
+                # Estrai tipi entita' dai profili
+                entity_types_set = set()
+                for p in prebuilt_profiles:
+                    if p.get('profession'):
+                        entity_types_set.add('Person')
+                    if p.get('nuts2_region'):
+                        entity_types_set.add('CalibratedAgent')
+                state.entity_types = list(entity_types_set) if entity_types_set else ['Person']
+
                 if progress_callback:
                     progress_callback(
-                        "generating_profiles", 
-                        int(current / total * 100), 
-                        msg,
-                        current=current,
-                        total=total,
-                        item_name=msg
+                        "loading_profiles", 50,
+                        f"Caricati {len(prebuilt_profiles)} profili"
                     )
-            
-            # Impostare percorso file per salvataggio in tempo reale (priorita' formato JSON Reddit)
-            realtime_output_path = None
-            realtime_platform = "reddit"
-            if state.enable_reddit:
-                realtime_output_path = os.path.join(sim_dir, "reddit_profiles.json")
+
+                # Salva profili nella directory simulazione
+                if state.enable_reddit:
+                    reddit_path = os.path.join(sim_dir, "reddit_profiles.json")
+                    with open(reddit_path, 'w', encoding='utf-8') as f:
+                        json.dump(prebuilt_profiles, f, ensure_ascii=False, indent=2)
+                    logger.info(
+                        f"Profili Reddit pre-costruiti salvati: {reddit_path} "
+                        f"({len(prebuilt_profiles)} profili)"
+                    )
+
+                if state.enable_twitter:
+                    # Genera CSV per Twitter dal JSON
+                    generator = OasisProfileGenerator(graph_id=state.graph_id)
+                    twitter_profiles = []
+                    for p in prebuilt_profiles:
+                        profile = OasisAgentProfile(
+                            user_id=p.get('user_id', 0),
+                            user_name=p.get('username', ''),
+                            name=p.get('name', ''),
+                            bio=p.get('bio', ''),
+                            persona=p.get('persona', ''),
+                            age=p.get('age', 30),
+                            gender=p.get('gender', 'unknown'),
+                            mbti=p.get('mbti', 'INTJ'),
+                            country=p.get('country', 'Italia'),
+                            profession=p.get('profession', ''),
+                            interested_topics=p.get('interested_topics', []),
+                            nuts2_region=p.get('nuts2_region'),
+                        )
+                        twitter_profiles.append(profile)
+                    generator.save_profiles(
+                        profiles=twitter_profiles,
+                        file_path=os.path.join(sim_dir, "twitter_profiles.csv"),
+                        platform="twitter"
+                    )
+
+                if progress_callback:
+                    progress_callback(
+                        "loading_profiles", 100,
+                        f"Completato, {len(prebuilt_profiles)} profili pre-costruiti caricati",
+                        current=len(prebuilt_profiles),
+                        total=len(prebuilt_profiles)
+                    )
+
+                # Crea entita' fittizie compatibili con EntityNode per il config generator
+                class _PrebuiltEntity:
+                    def __init__(self, p):
+                        self.uuid = str(p.get('user_id', 0))
+                        self.name = p.get('name', '')
+                        self.labels = ['Person', 'Entity']
+                        self.summary = p.get('bio', '')
+                        self.attributes = {
+                            'profession': p.get('profession', ''),
+                            'age': p.get('age', 30),
+                            'nuts2_region': p.get('nuts2_region', ''),
+                        }
+                        self.related_edges = []
+                        self.related_nodes = []
+
+                    def get_entity_type(self):
+                        return 'Person'
+
+                    def to_dict(self):
+                        return {
+                            'uuid': self.uuid,
+                            'name': self.name,
+                            'labels': self.labels,
+                            'summary': self.summary,
+                            'attributes': self.attributes,
+                            'related_edges': self.related_edges,
+                            'related_nodes': self.related_nodes,
+                        }
+
+                filtered_entities = [_PrebuiltEntity(p) for p in prebuilt_profiles]
+
+            # ========== Modalita' A: Flusso standard Zep -> Profili ==========
+            else:
+                # Fase 1: Lettura e filtraggio entita'
+                if progress_callback:
+                    progress_callback("reading", 0, "Connessione al grafo Zep...")
+
+                reader = ZepEntityReader()
+
+                if progress_callback:
+                    progress_callback("reading", 30, "Lettura dati nodi...")
+
+                filtered = reader.filter_defined_entities(
+                    graph_id=state.graph_id,
+                    defined_entity_types=defined_entity_types,
+                    enrich_with_edges=True
+                )
+
+                state.entities_count = filtered.filtered_count
+                state.entity_types = list(filtered.entity_types)
+
+                if progress_callback:
+                    progress_callback(
+                        "reading", 100,
+                        f"Completato, {filtered.filtered_count} entita' in totale",
+                        current=filtered.filtered_count,
+                        total=filtered.filtered_count
+                    )
+
+                if filtered.filtered_count == 0:
+                    state.status = SimulationStatus.FAILED
+                    state.error = "Nessuna entita' trovata che soddisfi i criteri, verificare che il grafo sia costruito correttamente"
+                    self._save_simulation_state(state)
+                    return state
+
+                # Fase 2: Generazione Agent Profile
+                total_entities = len(filtered.entities)
+
+                if progress_callback:
+                    progress_callback(
+                        "generating_profiles", 0,
+                        "Inizio generazione...",
+                        current=0,
+                        total=total_entities
+                    )
+
+                # Crea generatore profili con calibrazione ICF
+                generator = OasisProfileGenerator(graph_id=state.graph_id, nuts2_region=nuts2_region)
+
+                def profile_progress(current, total, msg):
+                    if progress_callback:
+                        progress_callback(
+                            "generating_profiles",
+                            int(current / total * 100),
+                            msg,
+                            current=current,
+                            total=total,
+                            item_name=msg
+                        )
+
+                # Impostare percorso file per salvataggio in tempo reale
+                realtime_output_path = None
                 realtime_platform = "reddit"
-            elif state.enable_twitter:
-                realtime_output_path = os.path.join(sim_dir, "twitter_profiles.csv")
-                realtime_platform = "twitter"
-            
-            profiles = generator.generate_profiles_from_entities(
-                entities=filtered.entities,
-                use_llm=use_llm_for_profiles,
-                progress_callback=profile_progress,
-                graph_id=state.graph_id,  # Passare graph_id per ricerca Zep
-                parallel_count=parallel_profile_count,  # Numero generazione parallela
-                realtime_output_path=realtime_output_path,  # Percorso salvataggio in tempo reale
-                output_platform=realtime_platform  # Formato output
-            )
-            
-            state.profiles_count = len(profiles)
-            
-            # Salva file Profile (nota: Twitter usa formato CSV, Reddit usa formato JSON)
-            # Reddit e' gia' stato salvato in tempo reale durante la generazione, qui si salva di nuovo per garantire completezza
-            if progress_callback:
-                progress_callback(
-                    "generating_profiles", 95,
-                    "Salvataggio file Profile...",
-                    current=total_entities,
-                    total=total_entities
+                if state.enable_reddit:
+                    realtime_output_path = os.path.join(sim_dir, "reddit_profiles.json")
+                    realtime_platform = "reddit"
+                elif state.enable_twitter:
+                    realtime_output_path = os.path.join(sim_dir, "twitter_profiles.csv")
+                    realtime_platform = "twitter"
+
+                profiles = generator.generate_profiles_from_entities(
+                    entities=filtered.entities,
+                    use_llm=use_llm_for_profiles,
+                    progress_callback=profile_progress,
+                    graph_id=state.graph_id,
+                    parallel_count=parallel_profile_count,
+                    realtime_output_path=realtime_output_path,
+                    output_platform=realtime_platform
                 )
-            
-            if state.enable_reddit:
-                generator.save_profiles(
-                    profiles=profiles,
-                    file_path=os.path.join(sim_dir, "reddit_profiles.json"),
-                    platform="reddit"
-                )
-            
-            if state.enable_twitter:
-                # Twitter usa formato CSV! Questo e' un requisito di OASIS
-                generator.save_profiles(
-                    profiles=profiles,
-                    file_path=os.path.join(sim_dir, "twitter_profiles.csv"),
-                    platform="twitter"
-                )
-            
-            if progress_callback:
-                progress_callback(
-                    "generating_profiles", 100,
-                    f"Completato, {len(profiles)} Profile in totale",
-                    current=len(profiles),
-                    total=len(profiles)
-                )
-            
+
+                state.profiles_count = len(profiles)
+
+                if progress_callback:
+                    progress_callback(
+                        "generating_profiles", 95,
+                        "Salvataggio file Profile...",
+                        current=total_entities,
+                        total=total_entities
+                    )
+
+                if state.enable_reddit:
+                    generator.save_profiles(
+                        profiles=profiles,
+                        file_path=os.path.join(sim_dir, "reddit_profiles.json"),
+                        platform="reddit"
+                    )
+
+                if state.enable_twitter:
+                    generator.save_profiles(
+                        profiles=profiles,
+                        file_path=os.path.join(sim_dir, "twitter_profiles.csv"),
+                        platform="twitter"
+                    )
+
+                if progress_callback:
+                    progress_callback(
+                        "generating_profiles", 100,
+                        f"Completato, {len(profiles)} Profile in totale",
+                        current=len(profiles),
+                        total=len(profiles)
+                    )
+
+                filtered_entities = filtered.entities
+
             # ========== Fase 3: Generazione intelligente configurazione simulazione tramite LLM ==========
             if progress_callback:
                 progress_callback(
@@ -406,7 +521,7 @@ class SimulationManager:
                 graph_id=state.graph_id,
                 simulation_requirement=simulation_requirement,
                 document_text=document_text,
-                entities=filtered.entities,
+                entities=filtered_entities,
                 enable_twitter=state.enable_twitter,
                 enable_reddit=state.enable_reddit
             )

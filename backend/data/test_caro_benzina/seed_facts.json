@@ -1,0 +1,57 @@
+{
+  "seed_id": "caro_benzina_marzo_2026",
+  "description": "Fatti reali (non opinioni politiche) per alimentare la simulazione MiroFish-IT sul caro-benzina marzo 2026.",
+  "reference_date": "2026-03-18",
+  "facts": [
+    {
+      "id": 1,
+      "category": "geopolitica",
+      "text": "La crisi nello Stretto di Hormuz ha provocato il crollo del 90% del traffico petroliere nel passaggio, con impatto diretto sulle quotazioni CIF Med del greggio."
+    },
+    {
+      "id": 2,
+      "category": "prezzi",
+      "text": "Nella notte tra il 2 e il 3 marzo 2026, rincari tra 7 e 10 centesimi al litro sul gasolio e 2-3 centesimi sulla benzina, applicati dai principali marchi petroliferi."
+    },
+    {
+      "id": 3,
+      "category": "prezzi",
+      "text": "Benzina self-service media nazionale al 18 marzo 2026: 1,856 EUR/litro. Gasolio self-service media nazionale: 2,089 EUR/litro."
+    },
+    {
+      "id": 4,
+      "category": "prezzi",
+      "text": "Il gasolio e a un passo dal massimo storico del 22 marzo 2022 (crisi Russia-Ucraina). Il prezzo attuale e il piu alto dal quel record."
+    },
+    {
+      "id": 5,
+      "category": "fiscalita",
+      "text": "Dal 1 gennaio 2026 e in vigore la riforma delle accise: il gasolio e strutturalmente piu caro della benzina per effetto del riallineamento fiscale."
+    },
+    {
+      "id": 6,
+      "category": "prezzi_regionali",
+      "text": "La provincia piu cara d'Italia per il carburante e Palermo. La piu economica e Sondrio (caso speciale Livigno: benzina a circa 1,40 EUR/l per lo status extradoganale)."
+    },
+    {
+      "id": 7,
+      "category": "istituzioni",
+      "text": "Il Ministero delle Imprese e del Made in Italy ha convocato la Commissione di allerta rapida (Mister Prezzi). La Guardia di Finanza ha rafforzato i controlli sui distributori."
+    },
+    {
+      "id": 8,
+      "category": "consumatori",
+      "text": "Le associazioni dei consumatori (Codacons, Federconsumatori, Assoutenti) hanno chiesto la reintroduzione delle accise mobili come meccanismo di calmierazione automatica."
+    },
+    {
+      "id": 9,
+      "category": "speculazione",
+      "text": "Il carburante attualmente in vendita nei distributori italiani e stato acquistato dalle compagnie petrolifere mesi fa, a prezzi significativamente piu bassi. Diverse associazioni denunciano il sospetto di speculazione sui rincari."
+    },
+    {
+      "id": 10,
+      "category": "impatto_famiglie",
+      "text": "Secondo le stime delle associazioni consumatori, il rincaro del carburante comporta un aggravio medio di 300-400 EUR/anno per una famiglia tipo che percorre 15.000 km/anno, con punte superiori a 600 EUR/anno per famiglie con due auto in aree senza trasporto pubblico."
+    }
+  ]
+}
